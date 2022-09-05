@@ -1,0 +1,108 @@
+html, body{
+    scroll-behavior: smooth;
+}
+
+@keyframes transitionIn {
+    from{
+        background-color: white;
+        opacity: 0;
+    }
+
+    to{
+        background-color: black;
+        opacity: 1;
+    }
+}
+
+@keyframes transitionInText {
+    
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes transitionInEmir {
+    0%{
+        opacity: 0;
+    }
+    
+    90%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+  
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+    color: aliceblue;
+}
+
+
+.opening{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 40%;
+}
+
+#welcome{
+    width: 100%;
+}
+#emirolympics{
+    width: 100%;
+}
+
+.plan{
+    position: absolute;
+    margin-top: 110%;
+    text-align: center;
+    width: 100%;
+    animation: transitionInEmir 7s;
+}
+
+.team{
+    position: absolute;
+    margin-top: 260%;
+    text-align: center;
+    margin-left: 60%;
+    animation: transitionInEmir 7s;
+    font-size: 12px;
+}
+
+.teams{
+    position: absolute;
+    margin-top: 260%;
+    text-align: center;
+    margin-left: 20%;
+    animation: transitionInEmir 7s;
+    font-size: 12px;
+    font-weight: 300px;
+    height: 350px;
+}
+
+#teamtitle{
+    position: absolute;
+    margin-top: 240%;
+    width: 100%; 
+    text-align: center;
+    animation: transitionInEmir 7s;
+}
